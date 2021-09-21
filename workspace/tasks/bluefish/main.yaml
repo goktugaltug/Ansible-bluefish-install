@@ -1,0 +1,6 @@
+-  name: install_bluefish_for_ubuntu
+   include: ubuntubluefish.yaml
+   when: ansible_os_family == "Debian"
+-  name: install_bluefish_for_centos
+   include: centosbluefish.yaml
+   when: ansible_os_family == "RedHat"

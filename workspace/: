@@ -1,0 +1,10 @@
+- name: Select OS family
+  tasks:
+
+    - name: Install bluefish on debian
+      include: /home/goktug/workspace/tasks/bluefish/ubuntubluefish.yaml
+    when: ansible_os_family == "Debian"
+
+    - name: Install bluefish on RedHat
+      include: /home/goktug/workspace/bluefish/centosbluefish.yaml
+    when: ansible_os_family == "RedHat"

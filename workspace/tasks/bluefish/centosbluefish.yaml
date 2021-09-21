@@ -1,0 +1,5 @@
+- ansible.builtin.command: yum update
+- ansible.builtin.command: yum install bluefish
+- name: start_bluefish
+  service: name=bluefish state=started
+
