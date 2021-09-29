@@ -1,6 +1,6 @@
 -  ansible.builtin.command: "apt update"  
 -  ansible.builtin.command: "apt install bluefish" 
--   service: 
-      name: bluefish 
-      state: started
+-  service: 
+     name: bluefish 
+     state: started
 
